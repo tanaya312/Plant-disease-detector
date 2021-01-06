@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<title>plant disease detector.main</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('https://youthspeak.ca/wp-content/uploads/2019/06/bigstock-Close-Up-Plant-in-Female-Hands-232622011.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color:rgb(12, 173, 12);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.right {
+  position: absolute;
+  right: 0%;
+  margin-top: 25%;
+  width: auto;
+  padding: 10px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+</style>
+<body>
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="right">
+    <h1 class="w3-jumbo w3-animate-top"style="text-align:center">PLANT DISEASE DETECTOR</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">One Step towards Green Future...</p>
+    <div class="center">
+      <a src="index.html">
+        <button id="mybutton" class="button" style="bottom: auto;"><span>Start </span></button>
+      </a>
+    </div>
+    
+  </div>
+  
+ </div>
+
+</body>
+</html>

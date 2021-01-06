@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=true">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+
+    <title> PLANT DISEASE DETECTOR</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+          }
+        button:hover {
+            background-color: #ddd;
+            color: black;
+            }
+            button {
+             text-decoration: none;
+             display: inline-block;
+             padding: 8px 16px;
+            }
+         .next {
+          background-color: #4CAF50;
+          font-family: Garamond, serif;
+          color: black;
+         } 
+
+         .bg {
+         background-image: url("https://img.freepik.com/free-vector/background-with-green-leaves-copy-space_79603-1055.jpg?size=626&ext=jpg");
+         height: 100%; 
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         }
+
+
+        .carousel-inner img {
+            height: 30vh;
+        }
+
+        form {
+            display: flex;
+            font-family: Garamond, serif;
+            color: rgb(12, 173, 12);
+            height: 65vh;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2px;
+            width: 60%;
+            text-align: center;
+            margin: auto;
+        }
+
+
+        .details h2 {
+            font-family: Garamond, serif;
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(1, 1, 15);
+            font-size: 3rem;
+        }
+        .details h1 {
+            font-family: Garamond, serif;
+            font-weight: bold;
+            font-size: 70px;
+            color: black;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .Content-h5 {
+
+padding: 15px;
+font-family: Garamond, serif;
+background-color: rgb(153, 156, 150);
+color: white;
+border-radius: 15px;
+margin-bottom: 2px;
+}
+
+        label:hover {
+            transform: scale(1.03);
+        }
+        .gallery-h1 h1 {
+            font-family: Garamond, serif;
+            color: black;
+            background-color: rgb(44, 43, 43);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .upload {
+            font-size: 40px;
+            font-family: Garamond, serif;
+            background-color: rgb(255, 252, 252);
+            border-radius: 20px;
+            outline: none;
+            width: 500px;
+            color: rgb(0, 0, 0);
+            border: 3px solid rgb(45, 47, 49);
+        }
+        ::-webkit-file-upload-button {
+            color: white;
+            padding: 20px;
+            border: 2px solid rgb(129, 129, 129);
+            background-color: rgb(129, 129, 129);
+            border-radius: 15px;
+
+        }
+
+        ::-webkit-file-upload-button:hover {
+            border-radius: 20px;
+            background-color: rgb(12, 173, 12);
+            border: 2px solid rgb(177, 174, 174);
+
+
+        }
+
+
+
+        input[type="submit"] {
+            font-family: Garamond, serif;
+            position: absolute;
+            margin-top: 300px;
+            padding: 15px 35px;
+            background-color: rgb(12, 173, 12);
+            border-radius: 15px;
+            color: black;
+            font-size: 35px;
+            border: 4px solid rgb(0, 13, 14);
+        }
+
+        .carousel-caption {
+            background: rgba(24, 25, 26, 0.5);
+            border-radius: 10px;
+        }
+
+
+
+        .carousel-caption h3 {
+
+
+            font-family: Garamond, serif;
+            color: rgb(108, 4, 168);
+            text-transform: uppercase;
+            margin-bottom: 300px;
+
+        }
+
+        .carousel-caption p {
+            padding: 7px;
+
+
+        }
+
+        .img-thumbnail {
+            height: 300px;
+        }
+        .borderimg1 { 
+            border: 70px solid transparent;
+            padding: 0px;
+            border-image: url("https://img.freepik.com/free-vector/background-with-green-leaves-copy-space_79603-1055.jpg?size=626&ext=jpg") 30 round;
+        }
+
+        @media only screen and (max-width: 325px) {
+            body {
+                font-size: x-small;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+        
+            var url = 'http://127.0.0.1:5001/GUI-is-still-open'; 
+            fetch(url, { mode: 'no-cors'});
+            setInterval(function(){ fetch(url, { mode: 'no-cors'});}, 5000)();
+        
+        });
+
+        
+    </script>
+    
+    <div style="background-color: rgb(181, 243, 181);">
+     <header>
+        <div class="container-fluid">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <img src="/static/images/cotton palnt banner.png" class="d-block w-100" alt="...">
+                    </div>
+
+                </div>
+               
+            </div>
+        </div>
+     </header>
+     <div class="borderimg1">
+
+     <button class="next" onclick="goForward()">Next &raquo;</button>
+
+     <script>
+     function goForward() {
+      window.history.forward();
+     }
+     </script>
+
+     <section>
+
+        <div class="container-fluid details">
+            <h1 class="text-center mt-5 ">Predict Plant Disease & Get Cure</h1>
+
+            <h2 class="text-center mt-4 mb-4" style="font-size: 50px ;color:rgb(12, 173, 12) ;font-family: Garamond, serif;">Upload The Picture Of Plant </h2>
+            <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+
+                <input type="file" name="image" class="upload">
+                <br>
+                <input type="submit" value="Predict">
+
+            </form>
+        </div>
+     </section>
+     </div>
+    </div>
+</body>
+</html>

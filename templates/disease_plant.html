@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title> PLANT DISEASE DECTECTOR</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .carousel-caption {
+            background: rgba(24, 25, 26, 0.5);
+            border-radius: 10px;
+        }
+        
+        .carousel-inner img {
+            height: 30vh;
+        }
+        .gallery-h1 h1 {
+            font-family: Garamond, serif;
+            color: rgb(12, 173, 12);
+            background-color: rgb(44, 43, 43);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+
+        }
+
+        .carousel-caption h3 {
+
+
+            font-family: Garamond, serif;
+            color: rgb(108, 4, 168);
+            text-transform: uppercase;
+            margin-bottom: 300px;
+
+        }
+
+        .carousel-caption p {
+            padding: 7px;
+
+        }
+
+
+        .bg {
+         background-image: url("https://img.freepik.com/free-vector/background-with-green-leaves-copy-space_79603-1055.jpg?size=626&ext=jpg");
+         height: 100%; 
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: 100% 100%;
+         }
+         button:hover {
+            background-color: #ddd;
+            color: black;
+            }
+
+            button {
+             text-decoration: none;
+             display: inline-block;
+             padding: 8px 16px;
+            }
+
+         .previous{
+            font-family: Garamond, serif;
+          background-color:rgb(12, 173, 12);
+          color: black;
+         } 
+
+        .card-style {
+            background-color: #dcdcdca4;
+
+        }
+
+        .content {
+            padding: 15px;
+            font-family: Garamond, serif;
+            color: black;
+            background-color: rgb(12, 173, 12);
+            /* font-size: 1rem; */
+        }
+
+        @media (max-width: 430px) and (min-width: 200px) {
+
+
+            .contents {
+                font-family: Garamond, serif;
+                font-size: 0.6rem;
+                color:rgb(12, 173, 12);
+            }
+
+            .content-h1 {
+                font-family: Garamond, serif;
+                font-size: 1rem;
+            }
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    
+ <div class="bg">
+    <header>
+        <div class="container-fluid">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <img src="/static/images/cotton palnt banner.png" class="d-block w-100" alt="...">
+                    </div>
+
+                </div>
+               
+            </div>
+        </div>
+ </header>
+
+ 
+    <button class="previous" onclick="goBack()">&laquo; Back</button>
+         <script>
+         function goBack() {
+          window.history.back();
+         }
+        </script>
+
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                    <!-- <img src="{{pred_output}}" alt="User Image" class="img-thumbnail"> -->
+
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(100, 192, 8); color: black;font-family: Garamond, serif;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                
+
+                <h2 style="color:rgb(12, 173, 12);font-weight: bold;font-family: Garamond, serif;">Disease Name  : </span></h2>
+                <h3 style="color: black;font-family: Garamond, serif;""line-height: 100%;">Attack of Leaf Sucking and Chewing Pests <br> </h3>
+                <hr class="w-100 mx-auto ">
+            </div>
+        </div>
+        
+        <h2 style="color:rgb(12, 173, 12);font-weight: bold;font-family: Garamond, serif;"> Causes of Disease: </h2>
+
+        <h4 style="color: black;font-family: Garamond, serif;"><strong>No specific reason</strong></h4>
+
+
+        <h2 style="color: rgb(12, 173, 12);font-weight: bold;font-family: Garamond, serif;"> Solution for Disease: </h2>
+        <h4 style="color: black;font-family: Garamond, serif;"><strong>Use any one Systemic Insecticide, which contain Flonicamid 50%/ Thiamethoxam 25% WG / Imidacloprid
+                    17.8 Sl / Acetamiprid 20% SP.</strong></h4>
+        <p></p>
+        
+    </div>
+
+
+
+    <section>
+
+        <div class="container">
+            <h1 style="padding: 15px; background-color: rgb(12, 173, 12); font-family: Garamond, serif;color: white;"
+                class="text-center my-3 content-h1">
+                Recommended Products</h1>
+        </div>
+
+        <div class="container">
+
+
+            <div class="card-columns">
+                
+                
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/confidor.png" alt="">
+                        <h3 style="color: black;font-family: Garamond, serif;" class="card-text">Dose: 25-35 ml/Acre</h3>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/actara.png" alt="">
+                        <h3 style="color: black;font-family: Garamond, serif;" class="card-text">Dose: 60-80 gm/Acre</h3>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/panama.png" alt="">
+                        <h3 style="color: black;font-family: Garamond, serif;" class="card-text">Dose: 60-80 gm/Acre</h3>
+                    </div>
+                </div>
+               
+
+
+            </div>
+
+        </div>
+
+    </section>
+ </div>
+
+</body>
+
+</html>
